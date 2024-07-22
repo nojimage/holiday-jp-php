@@ -1,0 +1,48 @@
+{
+    "name": "nojimage/holiday-jp",
+    "description": "This package will obtain information on Japanese public holidays based on the calendar information from the National Astronomical Observatory of Japan.",
+    "type": "library",
+    "require": {
+        "php": "^7.4 || ^8.0",
+        "ext-mbstring": "*",
+        "johngrogg/ics-parser": "^3",
+        "cakephp/chronos": "^2.4|^3.0"
+    },
+    "require-dev": {
+        "cakephp/collection": "^4.5|^5.0",
+        "phpstan/phpstan": "^1.11",
+        "phpunit/phpunit": "^9|^10|^11",
+        "squizlabs/php_codesniffer": "^3.10"
+    },
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Nojimage\\HolidayJp\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Nojimage\\HolidayJp\\Test\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "nojimage"
+        }
+    ],
+    "scripts": {
+        "check": [
+            "@cs-check",
+            "@stan",
+            "@test"
+        ],
+        "cs-check": "phpcs --colors -p  src/ tests/",
+        "cs-fix": "phpcbf --colors -p src/ tests/",
+        "stan": "phpstan analyse",
+        "test": "phpunit --colors=always"
+    },
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
