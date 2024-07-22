@@ -34,6 +34,10 @@ $holidays = $holidayJp->getHolidays(2024);
 
 // 指定期間の祝日一覧を取得
 $holidays = $holidayJp->getHolidays(new DateTime('2024-01-01'), new DateTime('2024-12-31'));
+
+// 祝日か判定する
+$holidayJp->isHoliday('2024-01-01'); // true
+$holidayJp->isHoliday('2024-01-02'); // false
 ```
 
 ## Contributing

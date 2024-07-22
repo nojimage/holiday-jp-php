@@ -65,6 +65,17 @@ class HolidayJp
     }
 
     /**
+     * check if the specified date is a holiday.
+     *
+     * @param \Cake\Chronos\ChronosDate|\DateTimeInterface|string $date the date
+     * @return bool
+     */
+    public function isHoliday($date): bool
+    {
+        return !empty($this->getHolidays($date, $date));
+    }
+
+    /**
      * @param \Cake\Chronos\ChronosDate|\DateTimeInterface|string $date the date
      * @return ChronosDate
      */

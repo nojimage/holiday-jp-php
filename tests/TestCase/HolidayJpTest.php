@@ -176,4 +176,13 @@ class HolidayJpTest extends TestCase
             })->toArray()
         );
     }
+
+    /**
+     * @return void
+     */
+    public function testIsHoliday(): void
+    {
+        $this->assertTrue($this->HolidayJp->isHoliday('2024-01-01'));
+        $this->assertFalse($this->HolidayJp->isHoliday('2024-01-02'));
+    }
 }
