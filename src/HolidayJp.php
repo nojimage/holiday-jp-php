@@ -23,10 +23,12 @@ class HolidayJp
 
     /**
      * Constructor
+     *
+     * @param \ICal\ICal|null $ical the ICal instance
      */
-    public function __construct()
+    public function __construct(?ICal $ical = null)
     {
-        $this->ical = new ICal(HolidayCalendarId::getGoogleCalenderUri());
+        $this->ical = $ical ?? new ICal(HolidayCalendarId::getGoogleCalenderUri());
     }
 
     /**
