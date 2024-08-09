@@ -28,7 +28,7 @@ class HolidayJp
      */
     public function __construct(?ICal $ical = null)
     {
-        $this->ical = $ical ?? new ICal(HolidayCalendarId::getGoogleCalenderUri());
+        $this->ical = $ical ?? new ICal(HolidayCalendarId::getGoogleCalendarUri());
     }
 
     /**

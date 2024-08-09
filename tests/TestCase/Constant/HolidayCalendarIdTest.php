@@ -18,12 +18,12 @@ class HolidayCalendarIdTest extends TestCase
     /**
      * @return void
      */
-    public function testGetGoogleCalenderUri(): void
+    public function testGetGoogleCalendarUri(): void
     {
         $this->assertSame(
             // phpcs:ignore Generic.Files.LineLength.TooLong
             'https://calendar.google.com/calendar/ical/2bk907eqjut8imoorgq1qa4olc%40group.calendar.google.com/public/basic.ics',
-            HolidayCalendarId::getGoogleCalenderUri()
+            HolidayCalendarId::getGoogleCalendarUri()
         );
     }
 }

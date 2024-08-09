@@ -19,7 +19,7 @@ final class HolidayCalendarId
      *
      * @return string
      */
-    public static function getGoogleCalenderUri(): string
+    public static function getGoogleCalendarUri(): string
     {
         return sprintf(
             'https://calendar.google.com/calendar/ical/%s/public/basic.ics',
