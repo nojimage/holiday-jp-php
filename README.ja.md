@@ -10,7 +10,7 @@
 
 NOTE: 2001年以前の祝日情報は取得できません。
 
-Via: [National Astronomical Observatory of Japan](https://eco.mtk.nao.ac.jp/koyomi/cande/calendar.html)
+情報元: [National Astronomical Observatory of Japan](https://eco.mtk.nao.ac.jp/koyomi/cande/calendar.html)
 
 ## Requirements
 
