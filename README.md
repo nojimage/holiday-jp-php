@@ -6,11 +6,11 @@
 
 ## Overview
 
-This package will obtain information on Japanese public holidays based on the calendar information from the National Astronomical Observatory of Japan.
+This package obtains information on Japanese public holidays based on the calendar information from the National Astronomical Observatory of Japan.
 
-NOTE: Public holiday information before 2001 cannot be obtained.
+NOTE: Public holiday information before 2001 is not available.
 
-Via: [National Astronomical Observatory of Japan](https://eco.mtk.nao.ac.jp/koyomi/cande/calendar.html)
+Source: [National Astronomical Observatory of Japan](https://eco.mtk.nao.ac.jp/koyomi/cande/calendar.html)
 
 ## Requirements
 
@@ -29,13 +29,13 @@ use Nojimage\HolidayJp\HolidayJp;
 
 $holidayJp = new HolidayJp();
 
-// Get list of holidays in 2024
+// Get a list of holidays in 2024
 $holidays = $holidayJp->getHolidays(2024);
 
 // Get a list of holidays for the specified period
 $holidays = $holidayJp->getHolidays(new DateTime('2024-01-01'), new DateTime('2024-12-31'));
 
-// Determine if it is a holiday
+// Check if a date is a holiday
 $holidayJp->isHoliday('2024-01-01'); // true
 $holidayJp->isHoliday('2024-01-02'); // false
 ```
